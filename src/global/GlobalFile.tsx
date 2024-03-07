@@ -1,15 +1,15 @@
-import Sider from "../components/common/Sider"
+import SlidingSider from "../components/common/SlidingSider"
 import MainPage from "../pages/MainPage"
 
 const GlobalFile = () => {
   return (
     <div>
-      <div className="flex">
-        <div>
+      <div className="flex w-full justify-between">
+        <div className="w-full relative">
           <MainPage />
         </div>
-        <div>
-          <Sider />
+        <div className="">
+          <SlidingSider />
         </div>
       </div>
     </div>
