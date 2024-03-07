@@ -19,7 +19,7 @@ const Header = () => {
       {!scroll ? <header className="w-full h-[55px] flex items-center justify-center z-[9999]  relative">
         <header className="w-full h-[55px] flex items-center transition-all duration-300  justify-center bg-white text-black fixed">
           <header className="w-[90%] h-full flex justify-between items-center">
-            <div>Logo</div>
+            <div>FrancisUzoigwe</div>
             <div className="flex items-center max-md:hidden">
               <div className="mx-3">Home</div>
               <div className="mx-3">About</div>
@@ -35,7 +35,7 @@ const Header = () => {
       </header> : <header className="w-full h-[55px] flex items-center justify-center z-[9999]  relative">
         <header className="w-full h-[55px] flex items-center transition-all duration-300  justify-center bg-black text-white fixed">
           <header className="w-[90%] h-full flex justify-between items-center">
-            <div>Logo</div>
+            <div>FrancisUzoigwe</div>
             <div className="flex items-center max-md:hidden">
               <div className="mx-3">Home</div>
               <div className="mx-3">About</div>
