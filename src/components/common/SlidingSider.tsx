@@ -38,12 +38,19 @@ const SlidingSider = () => {
   const toggled = useSelector((state: any) => state.toggle)
   const dispatch = useDispatch()
   return (
-    <motion.div variants={motionVariant} initial={false} animate={toggled ? "open" : "close"} className={`h-screen ${scroll ? "bg-white" : "bg-black"}  fixed z-[9999] top-0 right-0`}>
+    <motion.div variants={motionVariant} initial={false} animate={toggled ? "open" : "close"} className={`h-screen ${scroll ? "bg-white" : "bg-black"}  fixed z-[9999] top-0 right-0  flex-col items-center max-md:flex hidden`} >
       <div className="absolute top-5 right-6">{!scroll ? <IoMdClose className="text-2xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300 text-white" onClick={() => {
         dispatch(changedToggled())
       }} /> : <IoMdClose className="text-2xl hover:cursor-pointer hover:scale-[1.2] transition-all duration-300" onClick={() => {
         dispatch(changedToggled())
       }} />}</div>
+      <div className={`mt-16 flex flex-col items-center ${scroll ? "text-black" : "text-white"}`}>
+        <div className="my-5 hover:cursor-pointer">Home</div>
+        <div className="my-5 hover:cursor-pointer">About</div>
+        <div className="my-5 hover:cursor-pointer">Projects</div>
+        <div className="my-5 hover:cursor-pointer">Services</div>
+        <div className="my-5 hover:cursor-pointer">Contact</div>
+      </div>
     </motion.div>
   )
 }
