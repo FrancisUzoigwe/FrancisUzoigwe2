@@ -1,5 +1,6 @@
 import About from "../pages/About"
 import MainPage from "../pages/MainPage"
+import Projects from "../pages/Projects"
 import "../pages/body.css"
 
 const GlobalFile = () => {
@@ -7,6 +8,7 @@ const GlobalFile = () => {
         <div>
             <MainPage />
             <About />
+            <Projects />
         </div>
     )
 }

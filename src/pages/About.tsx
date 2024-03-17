@@ -13,7 +13,6 @@ const About = () => {
             <div className="my-2" />
             <div className="w-[90%] my-2 text-[20px] font-bold">Skills:</div>
             <div className="w-[90%]  ">
-
                 <li>HTML: Proficient in structuring web pages using semantic HTML5.  </li>
                 <li>CSS: Experienced in styling and designing responsive layouts with CSS3, including flexbox and grid</li>
                 <li>JavaScript: Strong skills in vanilla JavaScript for creating interactive and dynamic web experiences.</li>

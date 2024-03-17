@@ -36,7 +36,11 @@ const MainPage = () => {
                     <Link to="about" duration={500} smooth={true}>
                         <div className="mx-4 hover:cursor-pointer max-md:mx-3  ">About Me</div>
                     </Link>
-                    <div className="mx-4 hover:cursor-pointer max-md:mx-3  ">Projects</div>
+                    <Link to="project" duration={500} smooth={true}>
+
+                        <div className="mx-4 hover:cursor-pointer max-md:mx-3  ">Projects</div>
+
+                    </Link>
                     <div className="mx-4 hover:cursor-pointer max-md:mx-3  ">Contact</div>
                     <a href="https://github.com/FrancisUzoigwe">GitHub</a>
                 </div>
