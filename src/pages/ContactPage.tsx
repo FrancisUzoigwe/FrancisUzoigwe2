@@ -56,12 +56,12 @@ const ContactPage = () => {
         <div className="w-full min-h-[70vh] bg-[#f0f3f5] flex flex-col items-center" id="contact">
             <div className="text-[20px] max-md:text-[17px] uppercase font-bold my-10">Contact</div>
             <div className="w-[40%] max-md:w-[80%]  flex justify-between items-center my-1">
-                <div className='p-2 rounded-xl bg-white'><FaFacebookF className="text-2xl text-[blue]" /></div>
-                <div className='p-2 rounded-xl bg-white'><FaInstagram className="text-2xl text-[red]" /></div>
-                <div className='p-2 rounded-xl bg-white'><FaXTwitter className="text-2xl text-[black]" /></div>
-                <div className='p-2 rounded-xl bg-white'><FaGithub className="text-2xl text-[black]" /></div>
-                <div className='p-2 rounded-xl bg-white'><FaSkype className="text-2xl text-[blue]" /></div>
-                <div className='p-2 rounded-xl bg-white'><FaLinkedin className="text-2xl  text-[blue]" /></div>
+                <a className='p-2 rounded-xl bg-white' href='https://web.facebook.com/FrancisUzoigwe.28'><FaFacebookF className="text-2xl text-[blue]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://www.instagram.com/francisuzoigwe.28/'><FaInstagram className="text-2xl text-[red]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://twitter.com/francisuzoigwe1'><FaXTwitter className="text-2xl text-[black]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://github.com/FrancisUzoigwe'><FaGithub className="text-2xl text-[black]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://join.skype.com/invite/G5CJcsoJjwdj'><FaSkype className="text-2xl text-[blue]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246'><FaLinkedin className="text-2xl  text-[blue]" /></a>
             </div>
             <div className="w-[90%]">
                 <form ref={form} onSubmit={sendEmail} className="w-full  rounded-lg h-auto">
