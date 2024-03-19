@@ -28,6 +28,7 @@ const MainPage = () => {
     const toggle = useSelector((state: any) => state.toggle)
     return (
         <>
+
             {toggle && <Cv />}
             <div className="w-full min-h-[60vh] bg-[#333333] text-white flex flex-col items-center" id="home">
                 <div className="mt-12 text-[35px] font-black max-md:text-[20px]">Hi, I'm Francis Uzoigwe</div>
@@ -36,7 +37,7 @@ const MainPage = () => {
                 <p className="text-[12px] pb-5 text-center">Frontend Developer | Backend Developer | Ui/Ux Developer | CyberSecurity Enthusiast | Ai Enthusiast</p>
                 <button className="mb-4 py-[10px] px-5 bg-black text-white rounded-lg max-md:text-[12px] text-[16px]" onClick={() => {
                     dispatch(showcv())
-                }}>Download CV</button>
+                }}>View CV</button>
             </div>
 
             <div className={`w-full h-[40px] py-2 ${sticky ? 'sticky top-0 bg-white z-10' : 'relative bg-[#f0f3f5]'}`}>
