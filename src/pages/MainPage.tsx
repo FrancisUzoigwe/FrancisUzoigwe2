@@ -31,7 +31,7 @@ const MainPage = () => {
             {toggle && <Cv />}
             <div className="w-full min-h-[60vh] bg-[#333333] text-white flex flex-col items-center" id="home">
                 <div className="mt-12 text-[35px] font-black max-md:text-[20px]">Hi, I'm Francis Uzoigwe</div>
-                <img src={francis} alt="" className="max-md:w-[150px] max-md:h-[150px] w-[200px] h-[200px] rounded-full object-cover object-top my-3" loading="lazy" />
+                <img src={francis} alt="FrancisUzoigwe" className="max-md:w-[150px] max-md:h-[150px] w-[200px] h-[200px] rounded-full object-cover object-top my-3 overflow-hidden" loading="lazy" />
                 <div className="text-center w-[90%] text-[20px] max-md:text-[16px]">Dynamic Full Stack Web Developer Primed to Transform Your Digital Landscape</div>
                 <p className="text-[12px] pb-5 text-center">Frontend Developer | Backend Developer | Ui/Ux Developer | CyberSecurity Enthusiast | Ai Enthusiast</p>
                 <button className="mb-4 py-[10px] px-5 bg-black text-white rounded-lg max-md:text-[12px] text-[16px]" onClick={() => {
