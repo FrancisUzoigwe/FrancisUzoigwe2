@@ -2,7 +2,7 @@
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from "react"
 import Swal from "sweetalert2"
-import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin, FaSkype } from "react-icons/fa"
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin, FaSkype, FaWhatsapp } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 const ContactPage = () => {
 
@@ -62,6 +62,7 @@ const ContactPage = () => {
                 <a className='p-2 rounded-xl bg-white' href='https://github.com/FrancisUzoigwe'><FaGithub className="text-2xl text-[black]" /></a>
                 <a className='p-2 rounded-xl bg-white' href='https://join.skype.com/invite/G5CJcsoJjwdj'><FaSkype className="text-2xl text-[blue]" /></a>
                 <a className='p-2 rounded-xl bg-white' href='https://www.linkedin.com/in/francis-uzoigwe-2b3b9b246'><FaLinkedin className="text-2xl  text-[blue]" /></a>
+                <a className='p-2 rounded-xl bg-white' href='https://wa.link/gbbhu1'><FaWhatsapp className="text-2xl  text-[green]" /></a>
             </div>
             <div className="w-[90%]">
                 <form ref={form} onSubmit={sendEmail} className="w-full  rounded-lg h-auto">
