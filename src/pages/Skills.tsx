@@ -24,23 +24,33 @@ const Frontend = () => {
 
 
 
+import PodABE from "../assets/Poda.png"
+import ProfileBe from "../assets/Profile.png"
 const Backend = () => {
     return <>
-        <div>
-            Nothing to see here yet, Backend
+        <div className="w-full flex flex-col items-center">
+            <div className="w-[90%] grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-4">
+                <Cards url="https://poda-server.onrender.com" github="https://github.com/FrancisUzoigwe/poda_server" image={PodABE} name="PodA-Api" description="Crafted and deployed a robust backend server solution designed to seamlessly facilitate the subscription process for our newsletter recipients. Leveraged this system to promptly dispatch personalized confirmation emails to users upon successful subscription, ensuring they remain informed and engaged with our latest updates." />
+                <Cards url="https://profile-practice.onrender.com" name="Profille-Api" github="https://github.com/FrancisUzoigwe/profile" image={ProfileBe} description="Designed and implemented a dynamic API infrastructure adept at orchestrating seamless updates, profile modifications, and permission management. This solution empowers efficient communication between various systems, ensuring swift and secure handling of user data." />
+            </div>
         </div>
     </>
 }
-
-
 
 const UiUx = () => {
     return <>
-        <div>
-            Nothing to see here yet, UiUx
+        <div className="w-full flex flex-col items-center">
+            <div className="w-[90%] grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-4">
+                <div>Oh uh, nothing to see here yet.</div>
+                <div>Oh uh, nothing to see here yet.</div>
+                <div>Oh uh, nothing to see here yet.</div>
+            </div>
         </div>
     </>
 }
+
+
+
 
 const Skills = () => {
     const [uiux, setUiux] = useState<boolean>(false);

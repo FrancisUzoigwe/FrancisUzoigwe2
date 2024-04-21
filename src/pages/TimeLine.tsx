@@ -16,7 +16,7 @@ const TimeLine = () => {
                     icon={""}
                 >
                     <h3 className="vertical-timeline-element-title">Lead Frontend Developer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Lagos, Chyme</h4>
+                    <h4 className="vertical-timeline-element-subtitle">Lagos, Ajcash</h4>
                     <li className='text-[14px] my-2'>
                         Drove a 10-member team to develop a fintech platform facilitating instant money transfers, savings, airtime purchases, and utility payments.
                     </li>
