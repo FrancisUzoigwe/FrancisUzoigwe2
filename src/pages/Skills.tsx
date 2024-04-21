@@ -10,12 +10,12 @@ const Frontend = () => {
     return <>
         <div className="w-full flex flex-col items-center">
             <div className="w-[90%] grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-4">
-                <Cards image={Lyfecare} name="Lyfecare" url="https://lyfecare.netlify.app/" github="" description="Welcome to our platform, where you'll find affordable Health Maintenance Organization (HMO) plans and comprehensive health insurance coverage. We're dedicated to providing you with quality care at rates that fit your budget. Join us today for peace of mind and a healthier future." />
-                <Cards image={EazyHr} github="https://github.com/OgbuEsther/Easy_HR_FE2.git" url="https://eazyhr.vercel.app/" description="Welcome to our all-in-one business management platform. Simplify operations, collaborate effortlessly, and drive growth. Join us today." name="EazyHr" />
-                <Cards name="PodA" url="https://poda-pod.web.app" github="https://github.com/FrancisUzoigwe/Poda" description="Discover a curated collection of the latest podcasts and informative content on our professional platform. Stay up-to-date, inspired, and entertained with our diverse range of topics and expert insights. Join our community for a premium listening experience and expand your knowledge base." image={PodA} />
-                <Cards name="Ajcash" image={Ajcash} github="https://github.com/FrancisUzoigwe/Ajcash" url="https://ajcash-ng.web.app" description="Welcome to Ajcash, where we facilitate instant money transfers across the state. Experience seamless transactions with our secure and efficient system. Join us to simplify your financial transactions and enjoy peace of mind knowing your transfers are handled with care and precision." />
-                <Cards image={EcoBin} name="EcoBin" description="A waste disposal facilitation platform. We offer tailored solutions for businesses and organizations seeking efficient waste management strategies. Join us to streamline your waste disposal processes and ensure compliance with environmental regulations, all while reducing your carbon footprint." github="" url="https://ecobin.pages.dev/" />
-                <Cards image={Profile} name="Profille" description="An information updating platform. Enhance your data accuracy and efficiency with our streamlined system. Join us to seamlessly manage and update your information, ensuring it remains current and reliable." github="https://github.com/FrancisUzoigwe/profile_fe.git" url="https://profille.web.app/" />
+                <Cards image={Lyfecare} name="Lyfecare" url="https://lyfecare.netlify.app/" github="" description="Welcome to our platform, where you'll find affordable Health Maintenance Organization (HMO) plans and comprehensive health insurance coverage. We're dedicated to providing you with quality care at rates that fit your budget. Join us today for peace of mind and a healthier future." style="object-contain" />
+                <Cards image={EazyHr} github="https://github.com/OgbuEsther/Easy_HR_FE2.git" url="https://eazyhr.vercel.app/" description="Welcome to our all-in-one business management platform. Simplify operations, collaborate effortlessly, and drive growth. Join us today." name="EazyHr" style="object-contain" />
+                <Cards name="PodA" url="https://poda-pod.web.app" github="https://github.com/FrancisUzoigwe/Poda" description="Discover a curated collection of the latest podcasts and informative content on our professional platform. Stay up-to-date, inspired, and entertained with our diverse range of topics and expert insights. Join our community for a premium listening experience and expand your knowledge base." image={PodA} style="object-contain" />
+                <Cards name="Ajcash" image={Ajcash} github="https://github.com/FrancisUzoigwe/Ajcash" url="https://ajcash-ng.web.app" description="Welcome to Ajcash, where we facilitate instant money transfers across the state. Experience seamless transactions with our secure and efficient system. Join us to simplify your financial transactions and enjoy peace of mind knowing your transfers are handled with care and precision." style="object-contain" />
+                <Cards image={EcoBin} name="EcoBin" description="A waste disposal facilitation platform. We offer tailored solutions for businesses and organizations seeking efficient waste management strategies. Join us to streamline your waste disposal processes and ensure compliance with environmental regulations, all while reducing your carbon footprint." github="" url="https://ecobin.pages.dev/" style="object-contain" />
+                <Cards image={Profile} name="Profille" description="An information updating platform. Enhance your data accuracy and efficiency with our streamlined system. Join us to seamlessly manage and update your information, ensuring it remains current and reliable." github="https://github.com/FrancisUzoigwe/profile_fe.git" url="https://profille.web.app/" style="object-contain" />
             </div>
         </div>
     </>
@@ -30,20 +30,20 @@ const Backend = () => {
     return <>
         <div className="w-full flex flex-col items-center">
             <div className="w-[90%] grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-4">
-                <Cards url="https://poda-server.onrender.com" github="https://github.com/FrancisUzoigwe/poda_server" image={PodABE} name="PodA-Api" description="Crafted and deployed a robust backend server solution designed to seamlessly facilitate the subscription process for our newsletter recipients. Leveraged this system to promptly dispatch personalized confirmation emails to users upon successful subscription, ensuring they remain informed and engaged with our latest updates." />
-                <Cards url="https://profile-practice.onrender.com" name="Profille-Api" github="https://github.com/FrancisUzoigwe/profile" image={ProfileBe} description="Designed and implemented a dynamic API infrastructure adept at orchestrating seamless updates, profile modifications, and permission management. This solution empowers efficient communication between various systems, ensuring swift and secure handling of user data." />
+                <Cards url="https://poda-server.onrender.com" github="https://github.com/FrancisUzoigwe/poda_server" image={PodABE} name="PodA-Api" description="Crafted and deployed a robust backend server solution designed to seamlessly facilitate the subscription process for our newsletter recipients. Leveraged this system to promptly dispatch personalized confirmation emails to users upon successful subscription, ensuring they remain informed and engaged with our latest updates." style="object-contain" />
+                <Cards url="https://profile-practice.onrender.com" name="Profille-Api" github="https://github.com/FrancisUzoigwe/profile" image={ProfileBe} description="Designed and implemented a dynamic API infrastructure adept at orchestrating seamless updates, profile modifications, and permission management. This solution empowers efficient communication between various systems, ensuring swift and secure handling of user data." style="object-contain" />
             </div>
         </div>
     </>
 }
 
+
+import Carousel from "../assets/Uiux.png"
 const UiUx = () => {
     return <>
         <div className="w-full flex flex-col items-center">
             <div className="w-[90%] grid grid-cols-3 max-md:grid-cols-1 max-lg:grid-cols-2 gap-4">
-                <div>Oh uh, nothing to see here yet.</div>
-                <div>Oh uh, nothing to see here yet.</div>
-                <div>Oh uh, nothing to see here yet.</div>
+                <Cards image={Carousel} style="object-cover" github="" url="https://www.figma.com/file/SyvWpaCuvUdAN3CEii4dUG/CYSED?type=design&node-id=84-65&mode=design&t=n06XLFr2WCPttcee-0" show="hidden" name={"Instagram Carousels"} description="Created a flyer design for a Non-Governmental Organization that, is established to educate people on CyberCrime and it's consequences on victims." />
             </div>
         </div>
     </>

@@ -28,10 +28,10 @@ const MainPage = () => {
         <>
             {toggle && <Cv />}
             <div className="w-full min-h-[60vh] bg-[#333333] text-white flex flex-col items-center" id="home">
-                <div className="mt-12 text-[35px] font-black max-md:text-[20px]">Hi, I'm Francis Uzoigwe</div>
+                <div className="mt-12 text-[35px] font-black max-md:text-[20px] text-center">Hi, I'm Francis Uzoigwe</div>
                 <img src={francis} alt="FrancisUzoigwe" className="max-md:w-[150px] max-md:h-[150px] w-[200px] h-[200px] rounded-full object-cover object-top my-3 overflow-hidden" loading="lazy" />
-                <div className="text-center w-[90%] text-[20px] max-md:text-[16px]">Dynamic Full Stack Web Developer Primed to Transform Your Digital Landscape</div>
-                <p className="text-[12px] pb-5 text-center">Frontend Developer | Backend Developer | Ui/Ux Developer | CyberSecurity Enthusiast | Ai Enthusiast</p>
+                <div className="text-center w-[90%] text-[20px] max-md:text-[16px]">A Dynamic Full Stack Web Developer Primed to Transform Your Digital Landscape</div>
+                <p className="text-[12px] pb-5 text-center w-[90%]">Frontend Developer | Backend Developer | Ui/Ux Developer | CyberSecurity Enthusiast | Ai Enthusiast</p>
                 <a href={francisuzoigwe} download="FrancisUzoigwe" className="px-5 py-3 rounded-md my-4 bg-black text-white">Download CV</a>
             </div>
 
@@ -58,7 +58,7 @@ const MainPage = () => {
                 </div>
             </div>
             <div className="w-full flex flex-col items-center bg-[#f0f3f5]">
-                <div className="mt-4 text-[20px] font-black text-center max-md:text-[16px]">Passionate Full Stack Developer Building User-Centric Websites.</div>
+                <div className="mt-4 text-[20px] w-[90%] font-black text-center max-md:text-[16px]">Passionate Full Stack Developer Focused on Building User-Centric Websites.</div>
             </div>
         </>
     );
