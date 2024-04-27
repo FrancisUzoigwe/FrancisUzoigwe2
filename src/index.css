@@ -11,8 +11,17 @@
   font-family: Poppin;
 }
 
+@font-face {
+  font-family: Zah;
+  src: url(/font/Zaptron-Regular.otf);
+}
+
+.Zah {
+  font-family: Zah;
+}
+
 :root {
-  font-family: Poppin;
+  font-family: Poppin, Zah;
   line-height: 1.5;
   font-weight: 400;
 }

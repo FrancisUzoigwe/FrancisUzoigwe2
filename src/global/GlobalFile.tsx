@@ -24,9 +24,9 @@ const Arrow = () => {
     return <>
         <div className="fixed right-6 bottom-12 w-[45px] h-[45px] rounded-full flex items-center text-white justify-center bg-[blue] animate-bounce hover:cursor-pointer z-[200]">
             {
-                scroll ? <Link to="home" duration={1000} smooth={true}>
+                scroll ? <Link to="home" duration={5000} smooth={true}>
                     <FaArrowUp />
-                </Link> : <Link to="contact" duration={1000} smooth={true}>
+                </Link> : <Link to="contact" duration={5000} smooth={true}>
                     <FaArrowDown />
                 </Link>
             }

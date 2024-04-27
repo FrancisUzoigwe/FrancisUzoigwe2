@@ -1,36 +1,38 @@
-import React from "react";
-import { FaLink } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa6"
+import React from "react"
 import { Link } from "react-router-dom";
 
-interface iCard {
+interface iCards {
+    bg?: string;
+    text?: string;
+    textColor?: string;
+    description?: string;
+    live?: string;
+    liveLink?: string;
     github?: string;
-    url?: string;
-    image?: any;
-    name?: any;
-    style?: string;
-    description?: any;
-    show?: string;
+    githubLink?: string;
+    image?: string;
+    descriptionColor?: string;
 }
 
-
-const Cards: React.FC<iCard> = ({ github, url, image, name, description, style, show }) => {
+const Cards: React.FC<iCards> = ({ bg, text, description, live, github, image, textColor, descriptionColor, liveLink, githubLink }) => {
     return (
         <>
-            <div className="border min-h-[400px] flex flex-col items-center rounded-lg pb-4 bg-white">
-                <div className="w-[90%]  h-[200px] rounded-lg mt-5 relative ">
-                    <Link to={`${github}`}>
-                        <div className={`absolute top-3 -left-3 w-[55px] h-[55px] border rounded-full flex items-center justify-center bg-black text-white hover:cursor-pointer ${show}`}><FaGithub className="text-2xl" /></div>
-                    </Link>
-                    <Link to={`${url}`}>
-                        <div className="absolute top-3 -right-3 w-[55px] h-[55px] border rounded-full flex items-center justify-center bg-black text-white hover:cursor-pointer"><FaLink /></div>
-                    </Link>
-                    <img src={image} alt="Image" loading="lazy" className={`w-full h-full  ${style}`} />
+            <div className="min-h-[300px]  rounded-lg hover:cursor-pointer relative border">
+                <div className={`absolute  opacity-0 hover:opacity-100 w-full h-full transition-all duration-300 rounded-lg ease-linear flex flex-col items-center justify-center ${bg}`}>
+                    <div className={`my-4 text-[20px] font-black ${textColor}`}>{text}</div>
+                    <div className={`w-[95%] text-center ${descriptionColor}`}>
+                        {description}
+                    </div>
+                    <div className="flex  my-4 pb-3">
+                        <Link to={`${liveLink}`}>
+                            <div className={`mx-4  ${live}`}>Live Preview </div>
+                        </Link>
+                        <Link to={`${githubLink}`}>
+                            <div className={`mx-4  ${github}`}>GitHub</div>
+                        </Link>
+                    </div>
                 </div>
-                <div className="w-[90%] font-black text-[20px] my-3">{name}</div>
-                <div className="w-[90%] text-[15px] ">
-                    {description}
-                </div>
+                <img src={`${image}`} alt="" className="border-none w-full h-full rounded-lg object-left object-cover" />
             </div>
         </>
     )
