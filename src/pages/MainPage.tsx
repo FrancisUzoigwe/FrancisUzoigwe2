@@ -3,7 +3,7 @@ import francis from "../assets/francis.jpg";
 import { Link } from "react-scroll"
 import Cv from "./Cv";
 import { useSelector } from "react-redux";
-import francisuzoigwe from "../pages/FrancisUzoigweWD.pdf"
+import francisuzoigwe from "../assets/FrancisUzoigweCV.pdf"
 const MainPage = () => {
     const [sticky, setSticky] = useState<boolean>(false);
 
