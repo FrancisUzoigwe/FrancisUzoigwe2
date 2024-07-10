@@ -67,7 +67,7 @@ const Sider = () => {
         <a id="links" href="https://linkedin.com/in/francis-uzoigwe" className="translate-x-3 hover:cursor-pointer opacity-0"><FaLinkedin size={25} className="" /> </a>
         <a id="links" href="mailto:kossyuzoigwe@gmail.com" className="translate-x-3 opacity-0 text-[14px]mt-2"><BiLogoGmail size={25} /> </a>
         <a id="links" href="https://twitter.com/francisuzoigwe1" className="translate-x-3 hover:cursor-pointer opacity-0"><FaXTwitter size={25} className="" /> </a>
-        <a id="links" href="https://wa.link/vnj7tu" className="translate-x-3 hover:cursor-pointer opacity-0"><FaWhatsapp size={25} className="" /> </a>
+        <a id="links" href="https://wa.me/+2347047474886" className="translate-x-3 hover:cursor-pointer opacity-0"><FaWhatsapp size={25} className="" /> </a>
       </div>
     </div>
   )

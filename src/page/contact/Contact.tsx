@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "react-hot-toast";
 import { gsap, Power1 } from "gsap";
 import { useGSAP } from "@gsap/react";
-
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
     const visibility = useSelector((state: any) => state.visibility);
@@ -18,6 +19,8 @@ const Contact = () => {
 
     useGSAP(() => {
         gsap.to("#inp", { y: 0, opacity: 1, delay: 0, stagger: 0.8 })
+        gsap.to("#links", { y: 0, opacity: 1, delay: 2, stagger: 0.4 })
+        gsap.to("#reserve", { y: 0, opacity: 1, delay: 3, stagger: 0.4 })
         if (isSending) {
             const tl = gsap.timeline({ repeat: -1 });
             tl.fromTo(
@@ -119,12 +122,26 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center font-bold w-[90%] ">
+                <div className="flex items-center font-bold w-[90%] mt-2 ">
                     <hr className="w-[50%] " />
                     <span className={`  ${visibility ? "px-4 bg-black text-white" : "px-4 bg-white"}`}>OR</span>
                     <hr className="w-[50%]" />
                 </div>
-
+                <a href="https://wa.me/+2347047474886" className="bg-white animate-bounce rounded-full fixed bottom-10 right-10">
+                    <FaWhatsapp className={`text-4xl   ${!visibility ? "text-black" : "text-[green]"}`} />
+                </a>
+                <div className="max-md:w-[60%] my-5 w-[30%] flex items-center justify-evenly">
+                    <a id="links" className="opacity-0 translate-y-5" href="https://github.com/francisuzoigwe">
+                        <FaGithub size={25} />
+                    </a>
+                    <a id="links" className="opacity-0 translate-y-5" href="https://linkedin.com/in/francis-uzoigwe">
+                        <FaLinkedin size={25} />
+                    </a>
+                    <a id="links" className="opacity-0 translate-y-5" href="https://twitter.com/francisuzoigwe1">
+                        <FaXTwitter size={25} />
+                    </a>
+                </div>
+                <div id="reserve" className="opacity-0 translate-y-6 my-2 text-[14px] font-bold">&copy; {new Date().getFullYear()} <a href="https://francisuzoigwee.web.app">Francis Uzoigwe</a>. All rights reserved.</div>
             </form>
         </>
     );

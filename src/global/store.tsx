@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 import {
     persistReducer,
     FLUSH,
@@ -7,10 +7,10 @@ import {
     PERSIST,
     PURGE,
     REGISTER,
-} from 'redux-persist'
-import storage from 'redux-persist/lib/storage'
+} from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-import rootReducer from './globalState'
+import rootReducer from './globalState';
 
 
 const persistConfig = {
