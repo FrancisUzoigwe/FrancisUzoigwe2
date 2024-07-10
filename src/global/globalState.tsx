@@ -1,22 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
+    visibility: false,
     toggle: false
 }
 
 const globalState = createSlice({
-    name: "state",
+    name: "second",
     initialState,
     reducers: {
-        showcv: (state: any) => {
-            state.toggle = true
+        light: (state: any) => {
+            state.visibility = true;
         },
-        hidden: (state: any) => {
-            state.toggle = false
+        dark: (state: any) => {
+            state.visibility = false
+        },
+        open: (state: any) => {
+            state.toggle = true;
+        },
+        close: (state: any) => {
+            state.toggle = false;
         }
     }
 });
 
-export const { hidden, showcv } = globalState.actions
+export const { light, dark, close, open } = globalState.actions
 
 export default globalState.reducer

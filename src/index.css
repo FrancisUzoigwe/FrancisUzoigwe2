@@ -2,26 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: Poppin;
-  src: url(/font/Poppins-Regular.ttf);
+.gradient-hover span {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  transition:  0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: initial;
+  background-clip: text;
 }
 
-.Poppin {
-  font-family: Poppin;
+.gradient-hover span:hover {
+  background: linear-gradient(45deg, #807c33, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@font-face {
-  font-family: Zah;
-  src: url(/font/Zaptron-Regular.otf);
+.text-large {
+  font-size: 50px;
+  opacity: 1;
 }
 
-.Zah {
-  font-family: Zah;
+@media (max-width: 768px) {
+  .text-large {
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
 }
 
 :root {
-  font-family: Poppin, Zah;
   line-height: 1.5;
   font-weight: 400;
 }
