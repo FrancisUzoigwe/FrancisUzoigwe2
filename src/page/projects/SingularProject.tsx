@@ -46,6 +46,7 @@ const SingularProject = () => {
                     {project.projectImages.map((image, index) => (
                         <SwiperSlide key={index}>
                             <img
+                                loading="lazy"
                                 src={image}
                                 alt={`${project.alt}`}
                                 className="w-full object-cover rounded-md h-[450px] max-md:h-[300px] max-lg:h-[350px]"
