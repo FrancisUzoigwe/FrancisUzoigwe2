@@ -10,6 +10,7 @@ import Contact from "../page/contact/Contact";
 import Resume from "../page/resume/Resume";
 
 export const mainRoute = createBrowserRouter([
+    
     {
         path: "/",
         element: <Layout />,
