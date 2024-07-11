@@ -28,7 +28,7 @@ const Projects = () => {
                                 <div className="w-full h-[100px] justify-center flex items-center rounded-bl-md rounded-br-md bg-white border border-b">
                                     <div className="w-[80%] max-md:w-[95%]">
                                         <div className="font-bold">{el?.projectName}</div>
-                                        <a href={`${el?.projectUrl}`} className="hover:underline">{el?.projectName}</a>
+                                        <a href={`${el?.projectUrl}`} className="hover:underline">{el?.projectUrl}</a>
                                     </div>
                                 </div>
                             </div>

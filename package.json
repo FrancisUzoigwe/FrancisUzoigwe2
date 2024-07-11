@@ -31,7 +31,8 @@
     "react-swift-reveal": "^1.0.4",
     "react-vertical-timeline-component": "^3.6.0",
     "redux-persist": "^6.0.0",
-    "sweetalert2": "^11.6.13"
+    "sweetalert2": "^11.6.13",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
