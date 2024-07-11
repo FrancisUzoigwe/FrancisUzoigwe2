@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineDownloading } from "react-icons/md";
-import Francis from "../../FrancisKossyrisochukwuUzoigwe.pdf";
+import Francis from "../../assets/FrancisKossyrisochukwuUzoigwe.pdf";
 
 const Resume = () => {
 
