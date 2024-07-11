@@ -2,7 +2,6 @@ import React from 'react';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import "../../index.css";
-import Francis from "../../FrancisKossyrisochukwuUzoigwe.pdf";
 import { useSelector } from "react-redux";
 
 
@@ -14,7 +13,7 @@ const Home: React.FC = () => {
         gsap.to("#sub", { opacity: 1, delay: 2, y: 0 });
         gsap.to("#btn", { opacity: 1, delay: 4, y: 0 });
         gsap.to("#first", { opacity: 1, stagger: 0.1, x: 0, delay: 1.5 });
-        gsap.to("#animate", { opacity: 1, stagger: 0.2, x: 0, delay: 5 });
+        gsap.to("#animate", { opacity: 1, stagger: 0.1, x: 0, delay: 5 });
     }, []);
 
     return (
@@ -53,7 +52,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="my-3" />
                 <div>
-                    <a href={Francis}>
+                    <a href="/resume">
                         <button
                             id="btn"
                             className={`text-[14px] px-4 py-2 rounded-md border ${visibility ? "hover:shadow-sm border-white" : "border-black"
@@ -68,51 +67,51 @@ const Home: React.FC = () => {
                     {/* F */}
                     <div className='flex mx-3'>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5 rounded-md h-[20px]'></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5 rounded-md h-[20px]'></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5 rounded-md h-[20px]'></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5 rounded-md h-[20px]'></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                     </div>
                     {/* U */}
                     <div className='flex mx-3'>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ml-[17px] ${!visibility ? "border border-black" : "border border-white"} rounded-md h-[20px] `}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ml-[17px] ${!visibility ? "border border-black" : "border border-white"} rounded-md h-[20px] `}></div>
                         </div>
                         <div className=''>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
-                            <div id='animate'  className= 'opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ml-[24px] ${!visibility ? "border border-black " : "border border-white"} rounded-md h-[20px] `}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 -mt-1  ml-[2px] ${!visibility ? "border border-black " : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
+                            <div id='animate' className='opacity-0 w-[20px] translate-y-5  rounded-md h-[20px]'></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ml-[24px] ${!visibility ? "border border-black " : "border border-white"} rounded-md h-[20px] `}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 -mt-1  ml-[2px] ${!visibility ? "border border-black " : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                         <div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
-                            <div  id='animate' className={ `opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
+                            <div id='animate' className={`opacity-0 w-[20px] translate-y-5 ${!visibility ? " border border-black" : "border border-white"} rounded-md h-[20px]`}></div>
                         </div>
                     </div>
                 </div>
