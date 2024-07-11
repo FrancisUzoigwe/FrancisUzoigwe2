@@ -7,7 +7,7 @@ import Page from "../page/about/Page";
 import Experience from "../page/experience/Experience";
 import Projects from "../page/projects/Projects";
 import Contact from "../page/contact/Contact";
-import Résumé from "../page/résumé/Résumé";
+import Resume from "../page/resume/Resume";
 
 export const mainRoute = createBrowserRouter([
     {
@@ -24,7 +24,7 @@ export const mainRoute = createBrowserRouter([
             },
             {
                 path: "/resume",
-                element: <Résumé />
+                element: <Resume />
             },
             {
                 path: "/experience",

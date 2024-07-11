@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineDownloading } from "react-icons/md";
 import Francis from "../../FrancisKossyrisochukwuUzoigwe.pdf";
 
-const Résumé = () => {
+const Resume = () => {
 
     const data = [
         {
@@ -187,4 +187,4 @@ const Résumé = () => {
     )
 }
 
-export default Résumé
+export default Resume
