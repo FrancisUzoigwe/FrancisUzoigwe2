@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { dark, light } from "../global/globalState";
 
-const Errors = () => {
+const NoProject = () => {
   const visibility = useSelector((state: any) => state.visibility);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -16,7 +16,7 @@ const Errors = () => {
     gsap.to("#visibility", { opacity: 1, delay: 0.5 });
   }, [])
   return (
-    <div className={`w-full h-[100vh] flex flex-col items-center justify-center ${!visibility ? "bg-white text-black" : "bg-black text-white"}`}>
+    <div className={`w-full min-h-[calc(100vh-55px)] flex flex-col items-center justify-center ${!visibility ? "bg-white text-black" : "bg-black text-white"}`}>
       <div  className=" w-[90%] flex items-center justify-center mt-5">
         <div id="visibility" className="opacity-0 w-[35px] h-[35px] flex items-center justify-center">
           {visibility ?
@@ -84,7 +84,7 @@ const Errors = () => {
         </div>
       </div>
       <div className="my-4" />
-      <div id="animate" className="font-normal opacity-0">Oopsie!!, this page does not exist </div>
+      <div id="animate" className="font-normal opacity-0">Oopsie!!, this project seems to be missing! </div>
       <div id="animate1" className="mt-3 opacity-0 translate-y-5 transition-all duration-300 border hover:shadow-md hover:cursor-pointer px-4 py-2 rounded-md" onClick={() => {
         navigate(-1)
       }}>Go Back</div>
@@ -93,4 +93,4 @@ const Errors = () => {
   )
 }
 
-export default Errors
+export default NoProject

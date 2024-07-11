@@ -38,7 +38,7 @@ const Page = () => {
           </div>
         </div>
         <div id="animate" className={`w-[400px] max-md:mb-7 relative max-md:w-full ${!visibility ? "border border-black" : "border border-white"} ml-4 max-md:ml-0 opacity-0 translate-x-8 rounded-md h-[400px]`}>
-          <img id="sub" loading="lazy" src="http://res.cloudinary.com/dhu54k4vh/image/upload/v1718576177/qvzizaqyqv0dqoyyc3av.jpg" alt="Francis" className="opacity-0 -translate-y-5 absolute w-[400px] max-md:w-full h-[400px] object-cover object-top rounded-md mt-5 max-md:-ml-3 -ml-5" />
+          <img id="sub" loading="lazy" src="http://res.cloudinary.com/dhu54k4vh/image/upload/v1718576177/qvzizaqyqv0dqoyyc3av.jpg" alt="Francis Uzoigwe's Image" className="opacity-0 -translate-y-5 absolute w-[400px] max-md:w-full h-[400px] object-cover object-top rounded-md mt-5 max-md:-ml-3 -ml-5" />
         </div>
       </div>
     </div>

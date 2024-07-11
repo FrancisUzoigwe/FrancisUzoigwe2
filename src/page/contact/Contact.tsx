@@ -130,7 +130,7 @@ const Contact = () => {
                 <a href="https://wa.me/+2347047474886" className="bg-white animate-bounce rounded-full fixed bottom-10 right-10">
                     <FaWhatsapp className={`text-4xl   ${!visibility ? "text-black" : "text-[green]"}`} />
                 </a>
-                <div className="max-md:w-[60%] my-5 w-[30%] flex items-center justify-evenly">
+                <div className="max-md:w-[60%] mt-5 w-[30%] flex items-center justify-evenly">
                     <a id="links" className="opacity-0 translate-y-5" href="https://github.com/francisuzoigwe">
                         <FaGithub size={25} />
                     </a>
@@ -141,6 +141,7 @@ const Contact = () => {
                         <FaXTwitter size={25} />
                     </a>
                 </div>
+                <div className="text-[14px] mt-[10px] ">You can find the source code at <a href="https://github.com/francisuzoigwe/francisuzoigwe2" className="underline font-semibold">Source</a>, don't forget to leave a star ⭐⭐</div>
                 <div id="reserve" className="opacity-0 translate-y-6 my-2 text-[14px] font-bold">&copy; {new Date().getFullYear()} <a href="https://francisuzoigwee.web.app">Francis Uzoigwe</a>. All rights reserved.</div>
             </form>
         </>

@@ -17,6 +17,13 @@ const Header = () => {
     const location = useLocation();
     const active = location.pathname
 
+
+    const isActive = (path: string) => {
+        if (path === "/projects") {
+            return active === path || active.startsWith("/projects")
+        }
+        return active === path
+    }
     useGSAP(() => {
         gsap.to("#header", { opacity: 1, x: 0, stagger: 0.2 })
     })
@@ -36,7 +43,8 @@ const Header = () => {
                                 <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/about" ? "underline " : ""}`} id="header">About</div>
                             </Link>
                             <Link to="/projects">
-                                <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/projects" ? "underline" : ""}`} id="header">Projects</div>
+                                <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${isActive("/projects") ? "underline" : ""}`}
+                                    id="header">Projects</div>
                             </Link>
                         </div>
                         <div className="flex items-center justify-center max-md:hidden">

@@ -8,6 +8,7 @@ import Experience from "../page/experience/Experience";
 import Projects from "../page/projects/Projects";
 import Contact from "../page/contact/Contact";
 import Resume from "../page/resume/Resume";
+import SingularProject from "../page/projects/SingularProject";
 
 export const mainRoute = createBrowserRouter([
     
@@ -36,12 +37,15 @@ export const mainRoute = createBrowserRouter([
                 element: <Projects />
             },
             {
+                path: "/projects/:projectID",
+                element: <SingularProject />
+            },
+            {
                 path: "/contact",
                 element: <Contact />
             }
         ]
     },
-
     {
         path: "*",
         element: <Errors />

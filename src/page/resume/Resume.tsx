@@ -2,6 +2,11 @@ import { useSelector } from "react-redux";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineDownloading } from "react-icons/md";
 import Francis from "../../assets/FrancisKossyrisochukwuUzoigwe.pdf";
+import { IoIosMailUnread } from "react-icons/io";
+import { useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import { IoMailOpen } from "react-icons/io5";
+import gsap from "gsap";
 
 const Resume = () => {
 
@@ -115,30 +120,62 @@ const Resume = () => {
     ];
 
 
-    const visibility = useSelector((state: any) => state.visibility)
+    const visibility = useSelector((state: any) => state.visibility);
+    const mailIconRef = useRef<HTMLDivElement>(null);
+    const [mailOpen, setMailOpen] = useState(false);
+    useGSAP(() => {
+        const tl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+        tl.to(mailIconRef.current, {
+            duration: 0.7,
+            opacity: 0,
+            onComplete: () => setMailOpen(true),
+        }).to(mailIconRef.current, {
+            duration: 0.7,
+            opacity: 1,
+        }).to(mailIconRef.current, {
+            duration: 0.7,
+            opacity: 0,
+            onComplete: () => setMailOpen(false),
+        }).to(mailIconRef.current, {
+            duration: 0.7,
+            opacity: 1,
+        });
+
+        return () => {
+            tl.kill();
+        };
+    }, []);
+
+    
     return (
         <div className="min-h-[100vh] flex w-full flex-col items-center bg-gray-50">
             <div className={`w-[90%] flex flex-col items-center my-3 rounded-md min-h-[700px] shadow-md ${visibility ? "bg-black text-white" : "bg-white text-black"}`}>
                 <div className="w-[95%] flex items-center justify-end">
-                    <div className="flex items-center mt-[2px] ">
+                    <div className="flex items-center mt-1 ">
                         <a href="https://linkedin.com/in/francis-uzoigwe" className=""><FaLinkedin size={20} className={`${visibility ? "text-white" : "text-[blue]"}`} /></a>
-                        <a href={Francis}  className="hover:cursor-pointer ml-3 flex items-center text-[15px]"><MdOutlineDownloading className="mr-1" /> Download</a>
+                        <a href="mailto:kossyuzoigwe@gmail.com" className="hidden max-md:block mx-2">
+                            <div ref={mailIconRef}>
+                                {mailOpen ? <IoMailOpen size={20} /> : <IoIosMailUnread size={20} />}
+                            </div>
+                        </a>
+                        <a href="https://github.com/francisuzoigwe" className=" hidden max-md:block items-center text-[14px] font-medium"><FaGithub className="mr-[6px]" size={16} /></a>
+                        <a href={Francis} className="hover:cursor-pointer flex items-center text-[15px]"><MdOutlineDownloading className="mx-1" />Download</a>
                     </div>
                 </div>
                 <div className="w-[95%] flex justify-between mt-3 max-md:flex-col">
-                    <div className="w-[25%] max-md:w-full ">
-                        <div>
+                    <div className="w-[25%] max-md:w-full max-md:flex ">
+                        <div className="max-md:hidden">
                             <a href="https://github.com/francisuzoigwe" className="flex items-center text-[14px] font-medium"><FaGithub className="mr-1" />francisuzoigwe </a>
                             <div className="text-[14px]">Lagos, Nigeria.</div>
                             <a href="mailto:kossyuzoigwe@gmail.com" className="text-[14px]" >kossyuzoigwe@gmail.com</a>
                         </div>
-                        <div className="my-3">
+                        <div className="my-3 max-md:w-[45%] ">
                             <div className="font-bold  max-md:flex max-md:w-full">Core Technologies:</div>
                             {data?.map((el: any, i: any) => (
                                 <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
                             ))}
                         </div>
-                        <div className="my-3">
+                        <div className="my-3 max-md:w-[45%]">
                             <div className="font-bold">Others:</div>
                             {other?.map((el: any, i: any) => (
                                 <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
@@ -163,7 +200,7 @@ const Resume = () => {
                                             {el.name}
                                             <div className="h-[2px] mt-1 mx-2 w-[15px] bg-gray-400" />
                                             {el.title} &nbsp;
-                                            <div className="font-normal">{el.location}</div>
+                                            <div className="font-normal max-md:hidden">{el.location}</div>
                                         </div>
                                         <div className="text-[14px] max-md:hidden">{el.date}</div>
                                     </div>
