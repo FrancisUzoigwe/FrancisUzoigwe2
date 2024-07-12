@@ -20,7 +20,6 @@ const SingularProject = () => {
             <NoProject />
         )
     }
-
     return (
         <div className="w-full min-h-[100vh] flex flex-col items-center">
             <div className="my-2" />
@@ -29,7 +28,7 @@ const SingularProject = () => {
             }}>
                 <IoIosArrowBack /> Back</div></div>
             <div className="w-[90%] flex items-center justify-center font-bold text-[20px] max-md:text-[14px]">{project?.projectName}</div>
-            <div className="w-[90%] h-[450px] max-md:h-[300px] max-lg:h-[350px]  rounded-md my-2">
+            <div className="w-[90%] h-[600px] max-md:h-[300px] max-lg:h-[400px] rounded-md border my-2">
                 <Swiper
                     spaceBetween={10}
                     slidesPerView={1}
@@ -49,7 +48,7 @@ const SingularProject = () => {
                                 loading="lazy"
                                 src={image}
                                 alt={`${project.alt}`}
-                                className="w-full object-cover rounded-md h-[450px] max-md:h-[300px] max-lg:h-[350px]"
+                                className="w-full object-cover rounded-md h-[600px] max-md:h-[300px] max-lg:h-[400px]  object-top"
                             />
                         </SwiperSlide>
                     ))}
@@ -58,12 +57,15 @@ const SingularProject = () => {
 
             <div className="w-[90%] flex items-center justify-center mt-3">
                 <a href={`${project?.liveDemoUrl}`} className={`mx-2 px-4 py-2 rounded-md  ${!visibility ? "bg-black text-white" : "bg-white text-black"}`}>Live Demo</a>
-                <a href={`${project?.githubUrl}`} className="mx-2 border px-4 py-2 rounded-md">Source Code</a>
+                {project.githubUrl ? <a href={`${project?.githubUrl}`} className="mx-2 border px-4 py-2 rounded-md">Source Code</a> : ""}
             </div>
             <div className="w-[90%] mb-2">
                 {project?.descriptions?.map((el: any) => {
                     return (
-                        <p className="font-semibold max-md:text-[14px]">{el}</p>
+                        <>
+                            <div className="my-3" />
+                            <p className="mb-3">{el}</p>
+                        </>
                     )
                 })}
             </div>

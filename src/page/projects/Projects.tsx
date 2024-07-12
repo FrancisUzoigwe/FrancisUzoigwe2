@@ -18,7 +18,6 @@ const Projects = () => {
             <div className="my-2" />
             <div className="w-[90%] grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
                 {projectApi?.map((el: any, i) => {
-                    console.log("This is el: ", el)
                     return (
                         <Link to={`${el?.projectID}`}>
                             <div id="item" key={i} className={`hover:shadow-md duration-300 hover:cursor-pointer h-[300px] border rounded-md translate-y-5 opacity-0 ${visibility ? "border-white bg-[#fffff0]" : ""}`}>
@@ -27,8 +26,8 @@ const Projects = () => {
                                 </div>
                                 <div className="w-full h-[100px] justify-center flex items-center rounded-bl-md rounded-br-md bg-white border border-b">
                                     <div className="w-[80%] max-md:w-[95%]">
-                                        <div className="font-bold">{el?.projectName}</div>
-                                        <a href={`${el?.projectUrl}`} className="hover:underline">{el?.projectUrl}</a>
+                                        <div className={`font-bold ${visibility ? "text-black" : ""}`}>{el?.projectName}</div>
+                                        <a href={`${el?.projectUrl}`} className={`hover:underline ${visibility ? "text-black" : ""}`}>{el?.projectUrl}</a>
                                     </div>
                                 </div>
                             </div>
