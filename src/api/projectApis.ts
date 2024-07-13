@@ -8,6 +8,13 @@ import verify from "../assets/verify.png";
 import eazy from "../assets/eazy.png";
 import eazy1 from "../assets/eazy1.png";
 import eazysign from "../assets/eazysign.png";
+import lyfecare from "../assets/lyfecare.png";
+import lyfecaresign from "../assets/lyfecaresign.png";
+import lyfecareuser from "../assets/lyfecareuser.png";
+import ajcash from "../assets/ajcash.png";
+import ajcashsign from "../assets/ajcashsign.png";
+import ajcashprofile from "../assets/ajcashprofile.png";
+import ajcashdash from "../assets/ajcashdash.png";
 
 export const projectApi = [
   // Poda
@@ -69,9 +76,22 @@ export const projectApi = [
     url: "/projects/lyfecare",
     alt: "LyfeCare",
     projectUrl: "https://lyfecare.netlify.app/",
-    projectTumbmail: eazy,
-    projectImages: [eazy, eazy1, eazysign],
-    descriptions: ["This is EazyEr."],
-    liveDemoUrl: "https://lyfecare.netlify.app",
+    projectTumbmail: lyfecare,
+    projectImages: [lyfecare, lyfecaresign, lyfecareuser],
+    descriptions: ["This is LyfeCare."],
+    liveDemoUrl: "https://lyfecare.netlify.app/",
+  },
+  // Ajcash
+  {
+    projectID: "ajcash",
+    projectName: "AjCash",
+    url: "/projects/ajcash",
+    alt: "AjCash",
+    projectUrl: "https://ajcash-ng.web.app",
+    projectTumbmail: ajcash,
+    projectImages: [ajcash, ajcashsign, ajcashdash, ajcashprofile],
+    descriptions: ["This is AjCash."],
+    liveDemoUrl: "https://ajcash-ng.web.app/",
+    githubUrl: "https://github.com/francisuzoigwe/ajcash",
   },
 ];

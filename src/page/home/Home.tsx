@@ -14,6 +14,7 @@ const Home: React.FC = () => {
         gsap.to("#btn", { opacity: 1, delay: 4, y: 0 });
         gsap.to("#first", { opacity: 1, stagger: 0.1, x: 0, delay: 1.5 });
         gsap.to("#animate", { opacity: 1, stagger: 0.1, x: 0, delay: 5 });
+        gsap.fromTo("#stack", { opacity: 0, y: 20 }, { opacity: 1, y: 0, delay: 3 })
     }, []);
 
     return (
@@ -48,10 +49,10 @@ const Home: React.FC = () => {
                     id="sub"
                     className="opacity-0 translate-y-4 my-2 transition-all duration-300 text-center font-normal text-[14px] w-[98%] md:w-[45%]"
                 >
-                    `From the vibrant heart of Lagos, Nigeria, to the forefront of cutting-edge digital experiences, I transform vision into reality as a Frontend Developer. Driven by passion and precision, I elevate every project to new heights of excellence.`
+                    `From the vibrant heart of Lagos, Nigeria to the forefront of cutting-edge digital experiences, I transform vision into reality as a Frontend Developer. Driven by passion and precision, I elevate every project to new heights of excellence.`
                 </div>
-                <div className="my-3" />
-                <div>
+                <div id='stack' className='my-2 italic text-[14px] font-medium'>[MongoDB, ExpressJs, ReactJs, NodeJs]</div>
+                <div className='mt-2'>
                     <a href="/resume">
                         <button
                             id="btn"

@@ -16,11 +16,11 @@ const Page = () => {
       <div className="flex w-[90%] justify-between max-md:flex-col-reverse">
         <div className=" w-[70%] max-md:w-full" style={{ wordBreak: 'break-word', overflowWrap: 'break-word' }}>
           <div className="text-[14px] w-[95%]">
-            <div id="main" className="opacity-0 translate-y-4 w-full"><span className=" font-bold text-[15px]">Francis Kossyrisochukwu Uzoigwe</span>, a 19-year-old frontend developer based in Lagos, Nigeria, with over 3 years of experience. My journey includes successful collaborations with teams and companies across Africa, Europe, and Asia, creating exceptional user experiences. I have honed my skills in various web technologies, delivering outstanding digital solutions for small business websites and large-scale web applications.</div>
+            <div id="main" className="opacity-0 translate-y-4 w-full"><span className=" font-bold text-[15px]">Francis Kossyrisochukwu Uzoigwe</span>, a 19-year-old <span className="italic font-semibold">(28-10-2004)</span> frontend developer based in Lagos, Nigeria, with over 3 years of experience. My journey includes successful collaborations with teams and companies across Africa, Europe, and Asia, creating exceptional user experiences. I have honed my skills in various web technologies, delivering outstanding digital solutions for small business websites and large-scale web applications.</div>
           </div>
 
           <div className="text-[14px] w-[95%] mt-3">
-            <div id="main" className="opacity-0 translate-y-4 w-full"> <span className="font-bold">My journey </span>into web development began in 2016 when I discovered a free coding workshop at my local library. Fascinated by how websites were built, Igot enrolled in a coding institute <a className="underline font-bold" href="https://codelab-home.web.app">CodeLab</a> where I met like minds. I created my first site using HTML and CSS. This initial project ignited my passion for web development, leading me to explore various online resources such as Codecademy and freeCodeCamp and books like "HTML and CSS: Design and Build Websites" to build a strong foundation. </div>
+            <div id="main" className="opacity-0 translate-y-4 w-full"> <span className="font-bold">My journey </span>into web development began in 2016 when I discovered a free coding workshop at my local library. Fascinated by how websites were built, Igot enrolled in a coding institute <a className="underline font-bold italic" href="https://codelab-home.web.app">CodeLab</a> where I met like minds. I created my first site using HTML and CSS. This initial project ignited my passion for web development, leading me to explore various online resources such as Codecademy and freeCodeCamp and books like "HTML and CSS: Design and Build Websites" to build a strong foundation. </div>
           </div>
           <div className="text-[14px] w-[95%] mt-3">
             <div id="main" className="opacity-0 translate-y-4 w-full">Dedicated time to mastering core web technologies, learning the intricacies of HTML5, CSS3, and responsive design techniques. I delved into JavaScript (TypeScript), to make my websites interactive and started using Git fo version control and GitHub to collaborate with developers.</div>
@@ -31,7 +31,7 @@ const Page = () => {
 
           <div id="main" className="max-md:mb-5 opacity-0 translate-y-4 w-[95%]  text-[14px]">
             <div className="my-4" />
-            <div>Graduated from <span className="font-bold"><a href="https://codelab-home.web.app/" className="underline">CodeLab</a></span> <span className="text-[13px]">Lagos state, Nigeria.</span></div>
+            <div>Graduated from <span className="font-bold italic"><a href="https://codelab-home.web.app/" className="underline">CodeLab</a></span> <span className="text-[13px]">Lagos state, Nigeria.</span></div>
             <div><span className="font-bold">x3</span> Frontend Developer of the Month.</div>
             <div><span className="font-bold">x5</span> Best performing team player.</div>
             <div></div>

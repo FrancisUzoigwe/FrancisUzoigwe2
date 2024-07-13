@@ -6,7 +6,7 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
-  transition:  0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, color 0.3s ease-in-out;
   -webkit-background-clip: text;
   -webkit-text-fill-color: initial;
   background-clip: text;
@@ -36,6 +36,7 @@
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 
 :root {
   line-height: 1.5;
