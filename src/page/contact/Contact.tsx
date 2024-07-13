@@ -141,7 +141,7 @@ const Contact = () => {
                         <FaXTwitter size={25} />
                     </a>
                 </div>
-                <div className="text-[14px] mt-[10px] ">You can find the source code on <a href="https://github.com/francisuzoigwe/francisuzoigwe2" className="underline font-semibold">GitHub</a>, don't forget to leave a star ⭐⭐</div>
+                <div className="text-[14px] mt-[10px] max-md:w-[90%] text-center ">You can find the source code on <a href="https://github.com/francisuzoigwe/francisuzoigwe2" className="underline font-semibold">GitHub</a>, don't forget to leave a star ⭐⭐</div>
                 <div id="reserve" className="opacity-0 translate-y-6 my-2 text-[14px] ">&copy; {new Date().getFullYear()} <a href="https://francisuzoigwee.web.app">Francis Uzoigwe</a>. All rights reserved.</div>
             </form>
         </>

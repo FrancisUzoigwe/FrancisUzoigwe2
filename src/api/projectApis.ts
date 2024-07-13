@@ -33,7 +33,7 @@ export const projectApi = [
       "Why choose PodA? With us, you can enjoy versatility by listening to a wide range of podcasts, lectures, and educational content from various genres and fields. The convenience of accessing your favorite audio content anytime, anywhere, without the need to sit down and read, allows for continuous learning. Stay informed and educated with content that is regularly updated and curated to meet your learning needs. Plus, you can join a growing community of learners who share your passion for knowledge and personal growth.",
       "Be a part of our journey as we revolutionize the way you learn. Join our waitlist for Version 2 and be the first to experience the exciting new features we have in store. Together, let's make learning an integral part of our daily lives, effortlessly and enjoyably.",
     ],
-    liveDemoUrl: "https://ecobin.pages.dev/",
+    liveDemoUrl: "https://poda-pod.web.app",
     githubUrl: "https://github.com/francisuzoigwe/poda",
   },
   // Ecobin
@@ -61,5 +61,17 @@ export const projectApi = [
     descriptions: ["This is EazyEr."],
     liveDemoUrl: "https://eazyhr.vercel.app",
     githubUrl: "https://github.com/OgbuEsther/Easy_HR_FE2.git",
+  },
+  // LyfeCare
+  {
+    projectID: "lyfecare",
+    projectName: "LyfeCare",
+    url: "/projects/lyfecare",
+    alt: "LyfeCare",
+    projectUrl: "https://lyfecare.netlify.app/",
+    projectTumbmail: eazy,
+    projectImages: [eazy, eazy1, eazysign],
+    descriptions: ["This is EazyEr."],
+    liveDemoUrl: "https://lyfecare.netlify.app",
   },
 ];

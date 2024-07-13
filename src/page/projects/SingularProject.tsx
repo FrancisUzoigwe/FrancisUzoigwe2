@@ -60,6 +60,12 @@ const SingularProject = () => {
                 {project.githubUrl ? <a href={`${project?.githubUrl}`} className="mx-2 border px-4 py-2 rounded-md">Source Code</a> : ""}
             </div>
             <div className="w-[90%] mb-2">
+                {/* {project?.technology.map((el: any) => {
+                    console.log(el)
+                    return (
+                        el
+                    )
+                })} */}
                 {project?.descriptions?.map((el: any) => {
                     return (
                         <>

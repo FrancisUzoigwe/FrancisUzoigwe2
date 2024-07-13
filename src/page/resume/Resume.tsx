@@ -172,13 +172,13 @@ const Resume = () => {
                         <div className="my-3 max-md:w-[45%] ">
                             <div className="font-bold  max-md:flex max-md:w-full">Core Technologies:</div>
                             {data?.map((el: any, i: any) => (
-                                <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
+                                <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] min-w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
                             ))}
                         </div>
                         <div className="my-3 max-md:w-[45%]">
                             <div className="font-bold">Others:</div>
                             {other?.map((el: any, i: any) => (
-                                <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
+                                <div className="inline-block items-center text-[14px]" key={i}><div className={`h-[8px] min-w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
                             ))}
                         </div>
                     </div>
