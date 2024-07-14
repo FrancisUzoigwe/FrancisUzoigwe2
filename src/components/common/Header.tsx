@@ -2,7 +2,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
 import { CiDark } from "react-icons/ci";
 import { light, dark, open, close } from "../../global/globalState";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5"
 import Sider from "./Sider";
 import { IoMdClose } from "react-icons/io";
@@ -36,16 +36,10 @@ const Header = () => {
                     <div className="w-[90%] max-md:w-[90%] h-[55px] flex items-center justify-between">
                         <a href="/" className="text-[14px]">FrancisUzoigwe</a>
                         <div className="max-md:hidden flex items-center justify-center text-[14px]">
-                            <Link to="/">
-                                <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/" ? "underline" : ""}`} id="header">Home</div>
-                            </Link>
-                            <Link to="/about">
-                                <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/about" ? "underline " : ""}`} id="header">About</div>
-                            </Link>
-                            <Link to="/projects">
-                                <div className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${isActive("/projects") ? "underline" : ""}`}
-                                    id="header">Projects</div>
-                            </Link>
+                            <a href="/" className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/" ? "underline" : ""}`} id="header">Home</a>
+                            <a href="/about" className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${active === "/about" ? "underline " : ""}`} id="header">About</a>
+                            <a href="/projects" className={`mx-3 hover:cursor-pointer opacity-0 translate-x-4 hover:underline ${isActive("/projects") ? "underline" : ""}`}
+                                id="header">Projects</a>
                         </div>
                         <div className="flex items-center justify-center max-md:hidden">
                             <div className="mr-3 max-md:hidden text-[14px] hover:cursor-pointer transition-all duration-300"
@@ -60,9 +54,7 @@ const Header = () => {
                                     dispatch(light())
                                 }} />}</div>
                             {/* Button Part */}
-                            <Link to="/contact" >
-                                <button className={`flex ease-in-out items-center px-5 py-2 rounded-full hover:border-[orange] transition-all duration-300 border text-[14px] ${active === "/contact" ? "underline" : ""}`}>Contact </button>
-                            </Link>
+                            <a href="/contact" className={`flex ease-in-out items-center px-5 py-2 rounded-full hover:border-[orange] transition-all duration-300 border text-[14px] ${active === "/contact" ? "underline" : ""}`}>Contact </a>
                         </div>
                         {/* Drop Down Part */}
                         <div className=" hidden max-md:block">

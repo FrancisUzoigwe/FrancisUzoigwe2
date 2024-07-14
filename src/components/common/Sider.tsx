@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Sider = () => {
   const location = useLocation();
@@ -38,26 +38,19 @@ const Sider = () => {
             }} />}
         </div>
       </div>
-      <Link to="/" >
-        <div id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/" ? "underline" : ""}`} onClick={() => {
-          dispatch(close())
-        }}>Home</div></Link>
-      <Link to="/about" >
-        <div id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/about" ? "underline" : ""}`} onClick={() => {
-          dispatch(close())
-        }}>About</div>
-      </Link>
+      <a href="/" id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/" ? "underline" : ""}`} onClick={() => {
+        dispatch(close())
+      }}>Home</a>
+      <a href="/about" id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/about" ? "underline" : ""}`} onClick={() => {
+        dispatch(close())
+      }}>About</a>
 
-      <Link to="/projects">
-        <div id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/projects" ? "underline" : ""}`} onClick={() => {
-          dispatch(close())
-        }}>Projects</div>
-      </Link>
-      <Link to="/contact" >
-        <div id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/contact" ? "underline" : ""}`} onClick={() => {
-          dispatch(close())
-        }}>Contact</div>
-      </Link>
+      <a href="/projects" id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/projects" ? "underline" : ""}`} onClick={() => {
+        dispatch(close())
+      }}>Projects</a>
+      <a href="/contact" id="stagger" className={`opacity-0 my-[12px] text-[15px] translate-y-3 ${active === "/contact" ? "underline" : ""}`} onClick={() => {
+        dispatch(close())
+      }}>Contact</a>
 
       <div id="stagger" className="opacity-0 font-black text-[30px] mt-5">Say Hello!</div>
 

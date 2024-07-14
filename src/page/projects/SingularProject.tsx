@@ -23,7 +23,7 @@ const SingularProject = () => {
     return (
         <div className="w-full min-h-[100vh] flex flex-col items-center">
             <div className="my-2" />
-            <div className="w-[90%] flex "><div className="flex items-center hover:cursor-pointer text-[14px]" onClick={() => {
+            <div className="w-[90%] flex "><div className="flex items-center hover:cursor-pointer text-[16px] max-md:text-[14px] " onClick={() => {
                 navigate(-1)
             }}>
                 <IoIosArrowBack /> Back</div></div>
