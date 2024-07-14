@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdCheckBox, MdOutlineDownloading } from "react-icons/md";
-import Francis from "../../assets/FrancisKossyrisochukwuUzoigwe.pdf";
+import Francis from "../../assets/Francis-Uzoigwe-Resume.pdf";
 import { IoIosMailUnread } from "react-icons/io";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
