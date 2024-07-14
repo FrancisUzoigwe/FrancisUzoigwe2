@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdOutlineDownloading } from "react-icons/md";
+import { MdCheckBox, MdOutlineDownloading } from "react-icons/md";
 import Francis from "../../assets/FrancisKossyrisochukwuUzoigwe.pdf";
 import { IoIosMailUnread } from "react-icons/io";
 import { useRef, useState } from "react";
@@ -48,6 +48,12 @@ const Resume = () => {
             tech: "GSAP",
         },
         {
+            tech: "FireBase",
+        },
+        {
+            tech: "Vivux",
+        },
+        {
             tech: "Git",
         },
         {
@@ -69,7 +75,7 @@ const Resume = () => {
             tech: "Performance Optimization",
         },
         {
-            tech: "Search Engine Optimization (SEO)",
+            tech: "Search Engine Optimization",
         },
         {
             tech: "Software Testing"
@@ -80,6 +86,7 @@ const Resume = () => {
     ]
 
     const experience = [
+        // Poda
         {
             name: "Poda",
             title: "Lead Frontend Developer",
@@ -93,6 +100,7 @@ const Resume = () => {
                 "Effectively delegated tasks to team members, resulting in accelerated development, enhanced collaboration, and a 20% reduction in manpower costs."
             ]
         },
+        // Dirt2School
         {
             name: "Dirt2School",
             title: "Frontend Developer",
@@ -105,15 +113,16 @@ const Resume = () => {
                 "Collaborated hand-in-hand with Backend engineers to ensure comprehensive testing of all functionalities, which amounted to 100% test coverage of API endpoints, 25% in deployment speed, and 30% reduction in defects and bugs",
             ]
         },
+        // LyfeCare
         {
             name: "LyfeCare",
             title: "Frontend Developer",
             location: "Lagos, Nigeria",
             date: "Jan 2023 - July 2023",
             tasks: [
-                "Managed with a cross-functional team within the budget and on schedule to deliver a user-friendly and HIPAA-compliant app, exceeding user-satisfaction expectations with a 4.8-star rating on app stores.",
-                "Led the development and launch of `LyfeCare` a web app for blood sugar monitoring and management. LyfeCare empowers diabetic patients by providing real-time data analysis, personalized insights, and medication reminders, resulting in a 20% decrease in average HbA1c levels within a year of use.",
-                "Managed the product life cycle of LyfeCare, conducting user research to identify pain points and collaborating with engineers and designers to implement key features like integration with blood glucose meters and secure data sharing with healthcare providers.",
+                "Managed the product life cycle of LyfeCare, conducting user research to identify pain points, and collaborating with engineers and designers to implement key features like integration with blood glucose meters and secure data sharing with healthcare providers.",
+                "Led the development and successful launch of LyfeCare, enhancing health insurance accessibility by 16% for all low-class citizens.",
+                "Led the development and launch of LyfeCare, a web app for blood sugar monitoring and management. LyfeCare empowers diabetic patients by providing real-time data analysis, personalized insights, and medication reminders, resulting in a 20% decrease in average HbA1c levels within a year of use.",
             ]
         },
 
@@ -146,7 +155,7 @@ const Resume = () => {
         };
     }, []);
 
-    
+
     return (
         <div className="min-h-[100vh] flex w-full flex-col items-center bg-gray-50">
             <div className={`w-[90%] flex flex-col items-center my-3 rounded-md min-h-[700px] shadow-md ${visibility ? "bg-black text-white" : "bg-white text-black"}`}>
@@ -172,21 +181,25 @@ const Resume = () => {
                         <div className="my-3 max-md:w-[45%] ">
                             <div className="font-bold  max-md:flex max-md:w-full">Core Technologies:</div>
                             {data?.map((el: any, i: any) => (
-                                <div className="flex items-center text-[14px]" key={i}><div className={`h-[8px] min-w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
+                                <p className="my-1 flex">
+                                    <div className="inline-flex text-[14px]" key={i}><MdCheckBox className="mr-1 mt-1 min-w-[8px] min-h-[8px]" /> {el.tech}</div>
+                                </p>
                             ))}
                         </div>
                         <div className="my-3 max-md:w-[45%]">
                             <div className="font-bold">Others:</div>
                             {other?.map((el: any, i: any) => (
-                                <div className="inline-block items-center text-[14px]" key={i}><div className={`h-[8px] min-w-[8px] mr-2 rounded-sm bg-black border ${!visibility ? "bg-black " : "bg-white"}`} /> {el.tech}</div>
+                                <p className="my-1 flex">
+                                    <div className="inline-flex text-[14px]" key={i}><MdCheckBox className="mr-1 mt-1 min-w-[8px] min-h-[8px]" /> {el.tech}</div>
+                                </p>
                             ))}
                         </div>
                     </div>
                     <div className="w-[73%] max-md:w-full">
                         <div className="text-[60px] max-md:text-[30px] max-md:leading-[30px] font-bold leading-[55px]">Francis Kossyrisochukwu Uzoigwe</div>
                         <div className="my-4 text-[20px] font-normal">Expert Frontend Developer & Ui/Ux Designer</div>
-                        <div className="my-3 w-[85%] text-gray-400 text-[15px]">
-                            Engineer valued for driving high-performance accessible web experiences. I design quality, user-friendly and scalable products regardless of stack.
+                        <div className="my-3 w-[85%] max-md:w-full text-gray-400 text-[14px]">
+                            Experienced frontend developer proficient in optimizing web performance and ensuring cross-browser compatibility, with over 4 years of experience, known for developing scalable solutions and leading teams to deliver exceptional digital experience while staying ahead of the industry trends.
                         </div>
                         <div className="w-full my-3">
                             <hr className="w-full" />
