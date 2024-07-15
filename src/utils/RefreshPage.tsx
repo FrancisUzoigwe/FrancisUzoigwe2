@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux";
 
 const RefreshPage = () => {
-
   const visibility = useSelector((state: any) => state.visibility);
   return (
     <div className={`flex min-h-[100vh] flex-col items-center justify-center ${visibility ? "bg-black text-white" : "bg-white text-black"}`}>
       <div className=" w-[90%] flex items-center justify-center mt-5">
         <div id="visibility" className=" w-[35px] h-[35px] flex items-center justify-center">
-
         </div>
       </div>
       <div className='flex '>
