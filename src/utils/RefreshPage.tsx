@@ -64,11 +64,12 @@ const RefreshPage = () => {
       </div>
       <div className="my-3" />
       <div className="flex items-center ">
-        <div className="my-4 mr-1">Loading</div>
-        <div className="gap-1 flex ">
-          <div id="gap" className={` border size-[10px] rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
-          <div id="gap" className={`border size-[10px] rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
-          <div id="gap" className={`border size-[10px] rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
+        <div className="my-4 mr-2">Loading</div>
+        <div className="gap-1 flex mt-[2px] ">
+          <div id="loader" className={` border size-[8px]  rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
+          <div id="loader" className={`border size-[8px]  rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
+          <div id="loader" className={`border size-[8px]  rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
+          <div id="loader" className={`border size-[8px]  rounded-sm ${!visibility ? "border-black" : "border-white"}`}></div>
         </div>
       </div>
     </div>
