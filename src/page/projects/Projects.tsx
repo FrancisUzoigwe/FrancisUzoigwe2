@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <div className="w-full min-h-[100vh] flex-col items-center flex" >
             <div className="mt-8 text-[30px] max-md:text-[30px] font-bold opacity-0" id="project">/Projects</div>
-            <div id="project" className="text-center font-normal text-[18px] italic opacity-0">Some of my outstanding works over the years</div>
+            <div id="project" className="text-center font-normal text-[16px] italic opacity-0">[Some of my outstanding works over the years]</div>
             <div className="my-2" />
             <div className="w-[90%] grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
                 {projectApi?.map((el: any, i) => {

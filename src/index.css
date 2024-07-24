@@ -37,8 +37,17 @@
   width: 7px;
 }
 
+@font-face {
+  font-family: Poppin;
+  src: url(/font/Poppins-Regular.ttf);
+}
+
+.Poppin {
+  font-family: Poppin;
+}
 
 :root {
+  /* font-family: Poppin; */
   line-height: 1.5;
   font-weight: 400;
 }
