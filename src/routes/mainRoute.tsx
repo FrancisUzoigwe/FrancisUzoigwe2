@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import Errors from "../errors/Errors";
@@ -11,43 +10,42 @@ import Resume from "../page/resume/Resume";
 import SingularProject from "../page/projects/SingularProject";
 
 export const mainRoute = createBrowserRouter([
-    
-    {
-        path: "/",
-        element: <Layout />,
-        children: [
-            {
-                index: true,
-                element: <Home />
-            },
-            {
-                path: "/about",
-                element: <Page />
-            },
-            {
-                path: "/resume",
-                element: <Resume />
-            },
-            {
-                path: "/experience",
-                element: <Experience />
-            },
-            {
-                path: "/projects",
-                element: <Projects />
-            },
-            {
-                path: "/projects/:projectID",
-                element: <SingularProject />
-            },
-            {
-                path: "/contact",
-                element: <Contact />
-            }
-        ]
-    },
-    {
-        path: "*",
-        element: <Errors />
-    }
-])
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <Page />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
+      },
+      {
+        path: "/experience",
+        element: <Experience />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/projects/:projectID",
+        element: <SingularProject />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: "*",
+    element: <Errors />,
+  },
+]);
